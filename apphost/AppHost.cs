@@ -17,6 +17,7 @@ builder
         });
     });
 
+// Example of production container, so you don't need to deploy to ACA
 builder
     .AddDockerfile("web-container", "../web")
     .WithHttpEndpoint(targetPort: 80)
